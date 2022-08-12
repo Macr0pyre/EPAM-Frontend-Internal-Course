@@ -1,0 +1,23 @@
+@import "bootstrap";
+@import '_modal';
+
+.form-control {
+    display: inline;
+    width: 30%;
+}
+
+.add-new {
+    float: right;
+}
+
+.navbar-light {
+    padding: 10px;
+}
+
+.badge {
+    float: right;
+}
+
+.row-btn {
+    width: 40%;
+}

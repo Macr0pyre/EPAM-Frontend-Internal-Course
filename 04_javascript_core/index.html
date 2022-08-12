@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Core</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h2>Задание 1. Функция для подсчета результата выражения</h2>
+        <p>Введите выражение. Внутри выражения записываются вещественные числа (с точкой в качестве разделителя целой и дробной части), разделенные математическими операторами: +-*/. Между числом и оператором могут быть любые символы, кроме цифр и точек.
+            <strong>В конце строки стоит знак «равно»</strong>.</p>
+        <input id="calculator-input" type="text" placeholder="Введите выражение">
+        <button class="calculator-button">Выполнить</button>
+        <div class="calculator-result result"></div>
+    </section>
+
+    <section>
+        <h2>Задание 2. Функция, убирающая из строки встречающиеся во всех словах символы</h2>
+        <p>Введите строку из слов. Слова разделяются пробельными символами и знаками пунктуации: <strong>.?,;:!</strong>. Результатом является строка, из которой удалены символы, присутствующие в каждом слове. Регистр не учитывается.</p>
+        <input id="remover-input" type="text" placeholder="Введите строку">
+        <button class="remover-button">Выполнить</button>
+        <div class="remover-result result"></div>
+    </section>
+
+    <section>
+        <h2>Задание 3. Функция форматирования даты</h2>
+        <p>Введите дату и спецификатор формата в виде строки, содержащей:</p>
+        <p>yy – год в 2 цифры, yyyy – год в 4 цифры</p>
+        <p>M – месяц в числовом виде без лидирующего нуля, MM – месяц в числовом виде в 2 цифры, MMM – месяц в виде аббревиатуры, MMMM – месяц в виде полного имени</p>
+        <p>d – число без лидирующего нуля, dd – число в 2 цифры</p>
+        <p>H – часы в 24-часовом формате без лидирующего нуля, HH – часы в 24-часовом формате в 2 цифры, h – часы в 12-часовом формате без лидирующего нуля, hh – часы в 12-часовом формате в 2 цифры</p>
+        <p>m – минуты без лидирующего нуля, mm – минуты в 2 цифры</p>
+        <p>s – секунды без лидирующего нуля, ss – секунды в 2 цифры</p>
+        <input id="formatter-input-date" type="datetime-local" step="1">
+        <input id="formatter-input" type="text" placeholder="Введите желаемый формат даты">
+        <select id="formatter-select">
+            <option value="english">English</option>
+            <option value="russian" selected>Russian</option>
+        </select>
+        <button class="formatter-button">Выполнить</button>
+        <div class="formatter-result result"></div>
+    </section>
+
+    <section>
+        <h2>Задания 4 и 5 смотреть в консоли</h2>
+    </section>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

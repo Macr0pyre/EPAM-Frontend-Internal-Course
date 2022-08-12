@@ -1,0 +1,64 @@
+@import "../components/collaps_info";
+@import "../components/main_menu";
+@import "../components/card";
+
+.main {
+  overflow-y: auto;
+  height: calc(100vh - 50px);
+
+  &__a-back {
+    text-decoration: none;
+    color: $gray-color;
+    font-size: 13px;
+    padding-left: 3px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 0;
+    color: $dark-gray-color;
+    display: inline-block;
+  }
+}
+
+.wrapper {
+  padding: 5px 10px 5px;
+}
+
+.arrow-left {
+  border: solid $button-gray-color;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+@media screen and (min-width: 750px) {
+  .main {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    right: 0;
+    overflow: visible;
+
+    &__a-back {
+      font-size: 15px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+  }
+
+  .wrapper {
+    padding: 8px 30px 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    padding: 8px 15% 8px;
+  }
+}

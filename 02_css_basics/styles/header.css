@@ -1,0 +1,109 @@
+.header {
+  background: url(../images/top_bg.jpg);
+}
+
+.header__wrapper {
+  width: 1000px;
+  height: 524px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/header_bg.jpg);
+}
+
+.header__phone {
+  position: relative;
+  left: 794px;
+  width: 206px;
+  top: 18px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.header__nav {
+  position: relative;
+  top: 55px;
+  left: 17px;
+  width: 983px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__links {
+  margin-top: 6px;
+  display: flex;
+}
+
+.header__nav__links li {
+  margin-right: 11px;
+  text-align: center;
+  list-style: none;
+}
+
+.header__nav__links li:last-child {
+  margin-right: 20px;
+}
+
+.header__nav__links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12.5px;
+  font-weight: bold;
+  display: inline-block;
+  width: 86px;
+  line-height: 39px;
+}
+
+.header__nav__links li a:hover,
+.header__nav__links .active {
+  background: url(../images/home_hover.jpg);
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__nav__links .contact:hover {
+  background: url(../images/contact_hover.jpg);
+}
+
+.header__main-info {
+  position: relative;
+  width: 430px;
+  left: 540px;
+  top: 186px;
+}
+
+.header__main-info h1 {
+  font-size: 44px;
+  color: #ffffe0;
+  text-transform: uppercase;
+}
+
+.header__main-info h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.header__main-info p {
+  color: #ffffe0;
+  font-size: 11px;
+  margin-top: 3px;
+  line-height: 1.6;
+}
+
+.header__main-info button {
+  margin-top: 20px;
+  padding: 7px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  background: linear-gradient(#fff, #949494);
+  cursor: pointer;
+}
+
+.header__main-info button:hover {
+  color: #fff;
+}

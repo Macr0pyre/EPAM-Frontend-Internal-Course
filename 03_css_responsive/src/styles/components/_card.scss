@@ -1,0 +1,152 @@
+@import "../helpers/variables";
+
+.main__card {
+  background-color: $white;
+  border: solid 1px $border-color;
+  box-shadow: 2px 2px 2px $border-color;
+  margin: 7px 0;
+
+  &-info-wrapper {
+    padding: 9px;
+  }
+
+  &-role,
+  &-right,
+  &-date,
+  &-view-status,
+  &-company,
+  &-company-status {
+    display: inline-block;
+  }
+
+  &-right {
+    float: right;
+  }
+
+  &-role {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $accent-color;
+  }
+
+  &-date {
+    font-size: 10px;
+    color: $gray-color;
+    margin-right: 7px;
+  }
+
+  &-view-status {
+    font-size: 11px;
+    padding: 2px 12px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: $white;
+
+    &--new {
+      border: solid 1px $accent-color;
+      background-color: $accent-color;
+    }
+
+    &--viewed {
+      border: solid 1px $gray-color;
+      background-color: $gray-color;
+    }
+  }
+
+  &-name {
+    margin-top: 7px;
+    font-size: 18px;
+  }
+
+  &-line {
+    display: inline-flex;
+    margin-top: 5px;
+  }
+
+  &-company {
+    font-size: 16px;
+    margin-right: 3px;
+  }
+
+  &-company-status {
+    font-size: 9px;
+    padding: 2px 12px;
+    color: $accent-color;
+    border: solid 1px $accent-color;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  &-profession {
+    font-size: 13px;
+    color: $dark-gray-color;
+    margin: 5px 0;
+
+    span {
+      color: $gray-color;
+    }
+  }
+
+  &-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      border-top: solid 1px $border-color;
+      background-color: $background-color;
+      text-align: left;
+      padding: 7px;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      &:hover {
+        background-color: $border-color;
+      }
+
+      .fa-xmark {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-important-text {
+    font-size: 13px;
+    line-height: 19px;
+    color: $accent-color;
+  }
+
+  &-confirmed {
+    padding: 9px;
+    border-top: solid 1px $border-color;
+    font-size: 13px;
+    line-height: 19px;
+    color: $accent-color;
+
+    &-title {
+      text-decoration: underline;
+    }
+
+    &-day {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .main__card {
+    &-btn-wrapper {
+      flex-direction: row-reverse;
+  
+      button {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+    }
+    
+    &-btn-request,
+    &-btn-decline {
+      border-right: solid 1px $border-color;
+    }
+  }
+}

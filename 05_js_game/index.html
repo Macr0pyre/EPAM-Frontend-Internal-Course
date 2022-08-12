@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Game</title>
+</head>
+
+<body>
+    <canvas class="canvas"></canvas>
+    <div class="in-game">
+        <h1>
+            Zombies killed: <span id="killedEnemiesCnt"></span>/<span id="enemiesCnt"></span>
+        </h1>
+    </div>
+
+    <div class="wrapper-start">
+        <div class="start-menu">
+            <h1>Kill all zombies</h1>
+            <p>Press <span>WASD</span> to control your character</p>
+            <p><span>Use the mouse</span> to direct the shot</p>
+            <p><span>Click the mouse</span> to shoot</p>
+            <p>Press <span>space bar</span> to pause/unpause the game</p>
+            <button class="start"><span class="text">Start</span></button>
+            <button class="exit-start"><span class="text">Exit</span></button>
+        </div>
+    </div>
+
+    <div class="wrapper-end">
+        <div class="end-menu">
+            <h1>Game Over</h1>
+            <button class="end-restart"><span class="text">Restart</span></button>
+            <button class="exit-end"><span class="text">Exit</span></button>
+        </div>
+    </div>
+
+    <div class="wrapper-win">
+        <div class="win-menu">
+            <h1>You won!</h1>
+            <button class="win-restart"><span class="text">Restart</span></button>
+            <button class="exit-win"><span class="text">Exit</span></button>
+        </div>
+    </div>
+
+    <div class="wrapper-pause">
+        <div class="pause">
+            <h1>Pause</h1>
+        </div>
+    </div>
+</body>
+
+</html>

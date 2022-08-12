@@ -1,0 +1,289 @@
+.main {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__header {
+  height: 145px;
+  background: url(../images/growth_bg.jpg);
+}
+
+.main__text {
+  position: relative;
+  top: 48px;
+  left: 31px;
+  width: 969px;
+}
+
+.main__header h1 {
+  font-size: 24px;
+  color: #595959;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.main__header p {
+  color: #949494;
+}
+
+.section-welcome {
+  margin-top: 2px;
+}
+
+.section-welcome h1 {
+  font-size: 22px;
+  color: #868686;
+  text-transform: uppercase;
+}
+
+.section-welcome h1 span {
+  font-size: 30px;
+  color: #000;
+}
+
+.section-welcome h2 {
+  margin-top: 17px;
+  font-size: 13.5px;
+  color: #9bac02;
+  text-transform: uppercase;
+}
+
+.section-welcome p {
+  margin-top: 15px;
+}
+
+.section-welcome li {
+  margin-top: 19px;
+}
+
+.section-info {
+  margin-top: 42px;
+}
+
+.section-info h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.section-info p {
+  margin-top: 28px;
+}
+
+.section-welcome,
+.section-info {
+  margin-left: 30px;
+  width: 630px;
+}
+
+.section-welcome p,
+.section-info p,
+.section-hourglass p,
+.section-worker p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #595959;
+}
+
+.section-hourglass,
+.section-worker {
+  width: 650px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.section-hourglass__img,
+.section-worker__img {
+  float: left;
+  margin-right: 20px;
+}
+
+.section-hourglass p,
+.section-worker p {
+  margin-top: 13px;
+}
+
+.section-hourglass li,
+.section-worker li {
+  margin-top: 18px;
+}
+
+.section-worker {
+  margin-top: 30px;
+}
+
+section > a {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+section a {
+  text-decoration: none;
+  color: #d9922c;
+}
+
+section a:hover {
+  color: #9bac02;
+}
+
+section li {
+  font-size: 12px;
+  font-weight: bold;
+  list-style: square url(../images/green_dot.jpg) inside;
+}
+
+.login {
+  width: 255px;
+  position: absolute;
+  margin-left: 715px;
+  margin-top: -630px;
+  background: #f6f6f6 url(../images/login_top.jpg) top no-repeat;
+  border-radius: 8px;
+}
+
+.login__form {
+  height: 286px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+}
+
+.login__form h1 {
+  margin-top: 33px;
+  margin-left: 19px;
+  color: #9bac02;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.login__form__inside {
+  margin-left: 46px;
+  margin-top: 15px;
+}
+
+.login__form label,
+.login__form input {
+  display: block;
+  font-size: 11px;
+  color: #595959;
+}
+
+.required {
+  color: red;
+}
+
+.login__form input {
+  margin: 10px -10px;
+  width: 161px;
+  padding: 5px 11px;
+  border-radius: 12px;
+  box-shadow: -1px -1px 1px #b8b8b8;
+}
+
+.login__form input::placeholder {
+  color: #949494a6;
+  opacity: 1;
+}
+
+/* Internet Explorer 10-11 */
+.login__form input:-ms-input-placeholder {
+  color: rgba(148, 148, 148, 0.651);
+}
+
+.login__form button {
+  margin: 3px -10px;
+  padding: 6px 20px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(#b6b6b6, #969696);
+  color: #fff;
+}
+
+.login__form button:hover {
+  background: linear-gradient(#f6911c, #d67503);
+}
+
+.login__form li {
+  font-size: 12px;
+  list-style: square url(../images/orange_dot.jpg) inside;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.login__form li a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #595959;
+}
+
+.login__form li a:hover {
+  color: #d9922c;
+}
+
+.news {
+  width: 255px;
+  position: absolute;
+  margin-left: 715px;
+  margin-top: -335px;
+  background: #f6f6f6 url(../images/event_top.jpg) top no-repeat;
+  border-radius: 8px;
+}
+
+.news__wrapper {
+  height: 297px;
+  border: 1px solid #e2e2e2;
+  border-top-style: none;
+  border-radius: 8px;
+}
+
+.news__title {
+  margin-top: 40px;
+  margin-left: 64px;
+  color: #d9922c;
+  font-size: 24px;
+}
+
+.news__article__img {
+  position: relative;
+  margin-top: 16px;
+  margin-left: 19px;
+}
+
+.news__article__text_wrapper {
+  margin-left: 53px;
+  margin-top: -17px;
+}
+
+.news__article h1 {
+  font-size: 13px;
+  color: #a9ac02;
+}
+
+.news__article p {
+  font-size: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #595959;
+  margin-top: 13px;
+  margin-right: 20px;
+}
+
+.news__article li {
+  font-size: 12px;
+  list-style: square url(../images/orange_dot.jpg) inside;
+  margin-top: 5px;
+}
+
+.news__article li a {
+  text-decoration: none;
+  color: #d9922c;
+}
+
+.news__article li a:hover {
+  color: #9bac02;
+}
+
+.news article:last-child {
+  margin-top: 3px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive</title>
+    <script src="https://kit.fontawesome.com/9011db40dd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <input class="header__menu-toggle" id="header__menu-toggle" type="checkbox" />
+            <label class="header__menu-btn" for="header__menu-toggle">
+              <span></span>
+            </label>
+            <div class="header-overlay"></div>
+            <ul class="header__menu-box">
+                <li><a class="header__menu-item" href="#">expert search</a></li>
+                <li><a class="header__menu-item" href="#">saved experts</a></li>
+                <li><a class="header__menu-item header__menu-item--active" href="#">projects <i class="fa fa-solid fa-flag"></i></a></li>
+                <li><a class="header__menu-item" href="#">consultations <i class="fa-solid fa-phone"></i></a></li>
+                <li><a class="header__menu-item" href="#">events</a></li>
+                <li><a class="header__menu-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> logout</a></li>
+                <li class="header__menu-item">
+                    <i class="fa fa-solid fa-user"></i>
+                    <div class="header__menu-item-person">
+                        <p class="header__menu-item-person-logged">logged in as</p>
+                        <p class="header__menu-item-person-name">Girish Gopalan</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <img class="header__logo" src="../src/images/logo.png" alt="logo">
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <a href="#" class="main__a-back"> <i class="arrow-left"></i> Project List</a>
+            
+            <div class="title-and-menu-wrapper">
+                <div class="main__collaps-info">
+                    <h1 class="main__title">Test Project last</h1>
+                    <input class="main__collaps-info-toggle" id="main__collaps-info-toggle" type="checkbox" />
+                    <label class="main__collaps-info-btn" for="main__collaps-info-toggle">
+                    </label>
+                    <ul class="collaps-info-box">
+                        <div class="collaps-info-wrapper">
+                            <div class="collaps-info-box__first-col">
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Create date</span>
+                                    <time class="collaps-info-box__item-right" datetime="2015-01-20">01/20/15</time>
+                                </li>
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Target industries</span>
+                                    <span class="collaps-info-box__item-right">Wireline Telephone<br>Equipment</span>
+                                </li>
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Bios sent</span>
+                                    <span class="collaps-info-box__item-right">10</span>
+                                </li>
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Calls scheduled</span>
+                                    <span class="collaps-info-box__item-right">2</span>
+                                </li>
+                            </div>
+                            <div class="collaps-info-box__second-col">
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Requested consultations</span>
+                                    <span class="collaps-info-box__item-right">10</span>
+                                </li>
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Target companies</span>
+                                    <span class="collaps-info-box__item-right">Frontier Communications<br>Corporation [FTR]</span>
+                                </li>
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Calls completed</span>
+                                    <span class="collaps-info-box__item-right">2</span>
+                                </li>
+                                <li class="collaps-info-box__item">
+                                    <span class="collaps-info-box__item-left">Calls in scheduling</span>
+                                    <span class="collaps-info-box__item-right">1</span>
+                                </li>
+                            </div>
+    
+                        </div>
+                    </ul>
+                </div>
+    
+                <div class="main__menu">
+                    <input class="main__menu-input" type="radio" id="tab1" name="tabInput"><!--
+                    --><label class="main__menu-tab" for="tab1">experts <i class="fa fa-solid fa-flag"></i></label><!--
+                    --><input class="main__menu-input" type="radio" id="tab2" name="tabInput" checked><!--
+                    --><label class="main__menu-tab" for="tab2">consultations <i class="fa fa-solid fa-phone"></i></label>
+                    
+                    <div class="menu-filters">
+                        <button class="menu-filters__btn menu-filters__btn-expand menu-filters__item">expand all</button>
+                        <button class="menu-filters__btn menu-filters__btn-export menu-filters__item"><img class="icon_export" src="../src/images/export.png">export</button>
+                        <button class="menu-filters__btn menu-filters__btn-filters menu-filters__item"><i class="fa-solid fa-filter"></i> filters</button>
+                        <div class="menu-filters__item select_wrapper">
+                            <select class="menu-filters__select-item">
+                                <option value="status">Sort by Status</option>
+                                <option value="name">Sort by Name</option>
+                                <option value="company">Sort by Company</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main__card">
+                <div class="main__card-info-wrapper">
+                    <h3 class="main__card-role">industry expert</h3>
+                    <div class="main__card-right">
+                        <time class="main__card-date" datetime="2014-07-13">07/13/14</time>
+                        <div class="main__card-view-status main__card-view-status--new">new</div>
+                    </div>
+                    <h3 class="main__card-name">Mikhail Semichev</h3>
+                    <div class="main__card-line">
+                        <h3 class="main__card-company">EPAM</h3>
+                        <div class="main__card-company-status">public</div>
+                    </div>
+                    <p class="main__card-profession">FE developer <span>(12/01/11 - Present)</span></p>
+                    <div class="main__card-important-text">
+                        <p>Premium Rate: This Expert's hourly consulting rate exceeds our standart rate and would require an additional call debit.</p>
+                        <p>Translator Required: This Expert requires a translator, which we can coordinate for one additional call debit.</p>
+                    </div>
+                </div>
+                <div class="main__card-confirmed">
+                    <p class="main__card-confirmed-title">Confirmed Availability</p>
+                    <p class="main__card-confirmed-day">Tuesday 07/21/15 11:00 AM - 07:13 AM (UTC-05:00) Eastern Time (US & Canada)</p>
+                    <p class="main__card-confirmed-day">Monday 07/20/15 07:00 AM - 10:00 AM (UTC-05:00) Eastern Time (US & Canada)</p>
+                </div>
+                <div class="main__card-btn-wrapper">
+                    <button class="main__card-btn main__card-btn-schedule"><i class="fa-solid fa-phone"></i> schedule</button>
+                    <button class="main__card-btn main__card-btn-request"><i class="fa-solid fa-circle-info"></i> request info</button>
+                    <button class="main__card-btn main__card-btn-decline"><i class="fa-solid fa-xmark"></i> decline</button>
+                </div>
+            </div>
+
+            <div class="main__card">
+                <div class="main__card-info-wrapper">
+                    <h3 class="main__card-role">competitor</h3>
+                    <div class="main__card-right">
+                        <time class="main__card-date" datetime="2014-03-01">03/01/14</time>
+                        <div class="main__card-view-status main__card-view-status--new">new</div>
+                    </div>
+                    <h3 class="main__card-name">Mikhail Kuznetsov</h3>
+                    <div class="main__card-line">
+                        <h3 class="main__card-company">Yandex</h3>
+                        <div class="main__card-company-status">public parent</div>
+                    </div>
+                    <p class="main__card-profession">FE developer <span>(12/01/11 - 06/05/13)</span></p>
+                </div>
+                <div class="main__card-btn-wrapper">
+                    <button class="main__card-btn main__card-btn-schedule"><i class="fa-solid fa-phone"></i> schedule</button>
+                    <button class="main__card-btn main__card-btn-request"><i class="fa-solid fa-circle-info"></i> request info</button>
+                    <button class="main__card-btn main__card-btn-decline"><i class="fa-solid fa-xmark"></i> decline</button>
+                </div>
+            </div>
+            
+            <div class="main__card">
+                <div class="main__card-info-wrapper">
+                    <h3 class="main__card-role">customer</h3>
+                    <div class="main__card-right">
+                        <time class="main__card-date" datetime="2015-03-21">03/21/15</time>
+                        <div class="main__card-view-status main__card-view-status--viewed">viewed</div>
+                    </div>
+                    <h3 class="main__card-name">Nikita Reshetnikov</h3>
+                    <div class="main__card-line">
+                        <h3 class="main__card-company">Google</h3>
+                        <div class="main__card-company-status">public</div>
+                    </div>
+                    <p class="main__card-profession">FE developer <span>(12/01/11 - 06/05/13)</span></p>
+                </div>
+                <div class="main__card-btn-wrapper">
+                    <button class="main__card-btn main__card-btn-schedule"><i class="fa-solid fa-phone"></i> schedule</button>
+                    <button class="main__card-btn main__card-btn-request"><i class="fa-solid fa-circle-info"></i> request info</button>
+                    <button class="main__card-btn main__card-btn-decline"><i class="fa-solid fa-xmark"></i> decline</button>
+                </div>
+            </div>
+
+            <div class="main__card">
+                <div class="main__card-info-wrapper">
+                    <h3 class="main__card-role">customer</h3>
+                    <div class="main__card-right">
+                        <time class="main__card-date" datetime="2015-03-21">03/21/15</time>
+                        <div class="main__card-view-status main__card-view-status--viewed">viewed</div>
+                    </div>
+                    <h3 class="main__card-name">Mikhail Kuznetsov</h3>
+                    <div class="main__card-line">
+                        <h3 class="main__card-company">Yandex</h3>
+                        <div class="main__card-company-status">public</div>
+                    </div>
+                    <p class="main__card-profession">FE developer <span>(12/01/11 - 06/05/13)</span></p>
+                </div>
+                <div class="main__card-btn-wrapper">
+                    <button class="main__card-btn main__card-btn-schedule"><i class="fa-solid fa-phone"></i> schedule</button>
+                    <button class="main__card-btn main__card-btn-request"><i class="fa-solid fa-circle-info"></i> request info</button>
+                    <button class="main__card-btn main__card-btn-decline"><i class="fa-solid fa-xmark"></i> decline</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@import "./base/reset";
+@import "./components/start_menu";
+@import "./components/end_menu";
+@import "./components/in_game";
+@import "./components/win_menu";
+@import "./components/pause";
+@import "./helpers/variables";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $background-color;
+}

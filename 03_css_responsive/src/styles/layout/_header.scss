@@ -1,0 +1,27 @@
+@import "../components/side_menu";
+
+.header {
+  height: 50px;
+  background-color: $white;
+
+  &__logo {
+    height: 30px;
+    display: block;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header {
+    min-width: 180px;
+    height: 80px;
+    position: fixed;
+
+    &__logo {
+      height: 40px;
+      margin-top: 25px;
+    }
+  }
+}

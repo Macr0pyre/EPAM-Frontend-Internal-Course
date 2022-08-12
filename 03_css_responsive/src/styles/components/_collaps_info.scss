@@ -1,0 +1,78 @@
+@import "../helpers/variables";
+
+.main__collaps-info {
+  &-toggle {
+    opacity: 0;
+  }
+
+  &-btn {
+    margin-left: -15px;
+    color: $button-gray-color;
+    font-size: 15px;
+    cursor: pointer;
+
+    &::after {
+      content: "\f055";
+      font-weight: 900;
+      font-family: "Font Awesome 6 Free";
+    }
+  }
+
+  &-toggle:checked ~ .collaps-info-box {
+    display: block;
+  }
+
+  &-toggle:checked ~ &-btn::after {
+    content: "\f056";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+  }
+}
+
+.collaps-info-box {
+  display: none;
+
+  li:last-child {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    font-size: 13px;
+    clear: both;
+    border-top: solid 1px $border-color;
+    padding: 5px 0;
+    line-height: 17px;
+
+    &-left {
+      font-weight: bold;
+      color: $dark-gray-color;
+    }
+
+    &-right {
+      float: right;
+      text-align: right;
+      padding-bottom: 5px;
+      color: $gray-color;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .main__collaps-info {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .collaps-info-box {
+    &__first-col {
+      margin-right: 10px;
+    }
+
+    &__first-col,
+    &__second-col {
+      display: inline-block;
+      width: calc(50% - 10px);
+    }
+  }
+}
